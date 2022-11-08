@@ -1,3 +1,9 @@
+/*UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
+ALUMNO: Erick Sebastian Mora
+Fecha de Creacion: 25 de Octubre del 2022
+Fecha de Modificacion: 25 de Octubre del 2022
+Enunciado del Problema: Plantilla para Trabajos
+Nivel: Tercer PAO - NRC: 8000*/
 #include<iostream>
 
 template<typename T> //declaramos plantilla
@@ -6,7 +12,7 @@ template<typename T> //declaramos plantilla
      * @brief Declarar metodos ingresar, procesar, imprimir
 */
 class funcion{
-    
+
     public:
     /**
      * @brief Pide el ingreso de datos
@@ -32,17 +38,17 @@ class funcion{
      * @return funcion
     */
     funcion (int t);
-    
+
     funcion ();
-	
+
 	void setT (T otroT);
-	
+
 	void setPtr (T* otroPtr);
-	
+
 	T getT ();
-	
+
 	T* getPtr();
-	
+
     private:
         T*  ptr;
         T  t;

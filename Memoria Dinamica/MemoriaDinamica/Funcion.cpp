@@ -1,3 +1,9 @@
+/*UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
+ALUMNO: Erick Sebastian Mora
+Fecha de Creacion: 25 de Octubre del 2022
+Fecha de Modificacion: 25 de Octubre del 2022
+Enunciado del Problema: Plantilla para Trabajos
+Nivel: Tercer PAO - NRC: 8000*/
 #include<iostream>
 #include "funcion.h"
 
@@ -18,10 +24,10 @@ void funcion<T>::setT (T otroT){
 
 template<typename T>
 void funcion<T>::setPtr (T* otroPtr){
-		ptr=otroPtr; 
+		ptr=otroPtr;
 	}
 
-template<typename T>	
+template<typename T>
 	T funcion<T>:: getT (){
 		return t;
 	}
@@ -48,7 +54,7 @@ void funcion <T> ::imprimir(T *p,T t){
     {
         printf("\n\nValores ingresados: "); //pide valores a ingrear
         printf("%d",*(&(*p))); //Que significa esto preguntar al profe procesa variables a ingresar
-        printf("\n"); 
+        printf("\n");
         *(p++);//navega por la direccion del puntero extrayendo los valores
     }
 }
