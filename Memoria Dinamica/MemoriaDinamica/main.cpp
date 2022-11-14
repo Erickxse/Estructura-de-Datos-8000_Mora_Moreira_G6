@@ -1,7 +1,7 @@
 /*UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
 ALUMNOS: Mora Erick - Moreira Erick
 Fecha de Creacion: 07 de Noviembre del 2022
-Fecha de Modificacion: 08 de Noviembre del 2022
+Fecha de Modificacion: 11 de Noviembre del 2022
 Enunciado del Problema: Memoria Dinamica (Ejemplo de Clase)
 Nivel: Tercer PAO - NRC: 8000*/
 #include<iostream>
@@ -9,7 +9,9 @@ Nivel: Tercer PAO - NRC: 8000*/
 #include<stdio.h>
 #include<conio.h>
 #include"Funcion.cpp"
-
+#include"Ingresar.cpp"
+#include"Imp1.cpp"
+#include"Procesar.cpp"
 
 using namespace std;
 
@@ -24,9 +26,12 @@ int main(){
     cout<<"\nIngrese el tamano: "; //Pedimos al usuario que ingrese el tamaño
     cin>>tam; //se extrae el tamaño o valor ingresado
     funcion<int> val; //Instanciamos el objeto
-    val.ingresar(ptr,tam); //invocamos al metodo ingresar
-    val.imprimir(ptr,tam);
-    val.procesar(ptr,tam);
-    val.imprimir(ptr,tam);
+    Ingresar<int> ing;
+    Imp1<int> imp;
+    Procesar<int> proc;
+    ing.ingresar(ptr,tam);
+    imp.imprimir(ptr, tam);
+    proc.procesar(ptr, tam);
+    imp.imprimir(ptr, tam);
     getch();
 }

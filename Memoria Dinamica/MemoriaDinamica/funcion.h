@@ -1,11 +1,10 @@
 /*UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
-ALUMNO: Erick Sebastian Mora
-Fecha de Creacion: 25 de Octubre del 2022
-Fecha de Modificacion: 25 de Octubre del 2022
-Enunciado del Problema: Plantilla para Trabajos
+ALUMNOS: Mora Erick - Moreira Erick
+Fecha de Creacion: 07 de Noviembre del 2022
+Fecha de Modificacion: 11 de Noviembre del 2022
+Enunciado del Problema: Memoria Dinamica (Ejemplo de Clase)
 Nivel: Tercer PAO - NRC: 8000*/
 #include<iostream>
-
 template<typename T> //declaramos plantilla
 
 /**
@@ -14,30 +13,13 @@ template<typename T> //declaramos plantilla
 class funcion{
 
     public:
-    /**
-     * @brief Pide el ingreso de datos
-     * @param  T*,T
-     * @return void
-    */
-    void ingresar(T*,T );
-    /**
-     * @brief Imprime los datos, muestra en pantalla de la consola
-     * @param  T* ptr recibe un numero tipo puntero, T
-     * @return void
-    */
-    void imprimir(T*, T);
-    /**
-     * @brief Multiplica el arreglo por el escalar ingresado (proceso y almacenamiento)
-     * @param   T* ptr recibe un numero tipo puntero,T
-     * @return void
-    */
-    void procesar(T*, T);
+
     /**
      * @brief Constructor default de la clase
      * @param  T t -> recibe el tamaño, T* ptr recibe un numero tipo puntero
      * @return funcion
     */
-    funcion (int t);
+    funcion (int t); //constructores
 
     funcion ();
 
